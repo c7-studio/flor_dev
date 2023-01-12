@@ -4,6 +4,7 @@ import Experience from '../components/Experience';
 import Hero from '../components/Hero';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <Experience/>
     <Work/>
     <Contact/>
+    <Footer/>
   </div>
   )
 }

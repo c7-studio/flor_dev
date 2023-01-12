@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
+import { Link } from 'react-scroll/modules';
 
 const Navbar = () => {    
 
@@ -11,16 +11,16 @@ const Navbar = () => {
             </Link>
             <ul className='flex'>
                 <li className='px-2 mx-2'>
-                    <Link className='cursor-pointer' href='/'>About</Link>
+                    <Link className='focus:outline-grey-400 cursor-pointer' to="about" spy={true} smooth={true} offset={0} duration={500}>About</Link>
                 </li>
                 <li className='px-2 mx-2'>
-                    <Link className='cursor-pointer' href='/'>Experience</Link>
+                    <Link className='focus:outline-grey-400 cursor-pointer' to="experience" spy={true} smooth={true} offset={0} duration={500}>Experience</Link>
                 </li>
                 <li className='px-2 mx-2'>
-                    <Link className='cursor-pointer' href='/'>Work</Link>
+                    <Link className='focus:outline-grey-400 cursor-pointer' to="work" spy={true} smooth={true} offset={0} duration={500}>Work</Link>
                 </li>
                 <li className='px-2 mx-2'>
-                    <Link className='cursor-pointer' href='/'>Contact</Link>
+                    <Link className='focus:outline-grey-400 cursor-pointer' to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
                 </li>
                 <li className='px-2 mx-2'>
                 <button className='text-white bg-[#6D748D] shadow-lg font-medium rounded-md text-sm px-2 py-1.5 mr-2 mb-2'>
